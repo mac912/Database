@@ -1,0 +1,25 @@
+
+
+BASIC SQL QUERY 
+
+mysql -u root -p
+
+1 show databases;
+2. create database customer;
+3. use customer;
+4. create table person(sno varchar(5) primary key, name varchar(30), age int(3), sex varchar(1));
+5. show tables;
+6. describe person;
+7. insert into person(sno, name, age, sex) values('1', 'manish', '20', 'M');
+8. select *from person;
+9. select name from person;
+10. select *from person where sno = '2';
+11. alter table person add phone varchar(10); 
+12. alter table person add email varchar(20) after sex;
+13. alter table person modify email varchar(30);
+14. alter table person drop email;
+15. update person set age  = 20;
+16. update perosn set age = 24 where sno = '1';
+17. delete from person where sno = '2';
+18. drop table person;
+19. drop database customer; 
